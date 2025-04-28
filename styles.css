@@ -1,0 +1,122 @@
+/* styles.css */
+
+/* Reset y cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Contenedor principal */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Título principal */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Área del chat */
+  #chat-container {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    background-color: #ffffff;
+    border: 2px solid #d1d5db;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
+  
+  /* Mensajes */
+  .message {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+  .user {
+    background-color: #d1e7dd;
+    align-self: flex-end;
+    text-align: right;
+    color: #0f5132;
+  }
+  
+  .bot {
+    background-color: #e2e3e5;
+    align-self: flex-start;
+    text-align: left;
+    color: #41464b;
+  }
+  
+  /* Campo de texto */
+  #user-input {
+    width: 100%;
+    max-width: 380px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Botones */
+  #send-button, #reset-button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #send-button {
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  #send-button:hover {
+    background-color: #0b5ed7;
+  }
+  
+  #reset-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  #reset-button:hover {
+    background-color: #bb2d3b;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    #chat-container {
+      height: 400px;
+    }
+  
+    #user-input {
+      max-width: 90%;
+    }
+  
+    #send-button, #reset-button {
+      width: 45%;
+      font-size: 0.9rem;
+    }
+  }
+  
